@@ -245,7 +245,7 @@ class Array
 
   def self.filter(array=[], &predicate)
     if !array.instance_of?(Array) || array.size == 0
-	  return []
+      return []
     end
     if !block_given?
       predicate = @@falsey
